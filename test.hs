@@ -31,3 +31,11 @@ test _ = False
 odds :: Int -> [Int]
 odds n = map f [0..n-1]
   where f x = x * 2 + 1
+
+halve :: [a] -> ([a], [a])
+halve x = (take n x, drop n x)
+  where n = (length x) `div` 2
+
+safetail :: [a] -> [a]
+safetail [] = []
+safetail (_ :tail) = tail
