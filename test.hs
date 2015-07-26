@@ -23,3 +23,7 @@ signum n | n < 0 = -1
 fst (x, _) = x
 
 snd (_, y) = y
+
+test :: [Char] -> Bool
+test ('a' :_) = True
+test _ = False
