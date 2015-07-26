@@ -12,3 +12,13 @@ zeroto n = [0..n]
 
 add' :: Int -> (Int -> Int)
 add' x y = x + y
+
+abs n = if n >= 0
+        then n
+        else -n
+
+signum n = if n < 0
+           then - 1
+           else if n == 0
+                then 0
+                else 1
