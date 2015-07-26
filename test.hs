@@ -19,3 +19,7 @@ abs n | n >= 0 = n
 signum n | n < 0 = -1
          | n == 0 = 0
          | otherwise = 1
+
+fst (x, _) = x
+
+snd (_, y) = y
