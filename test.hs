@@ -27,3 +27,7 @@ snd (_, y) = y
 test :: [Char] -> Bool
 test ('a' :_) = True
 test _ = False
+
+odds :: Int -> [Int]
+odds n = map f [0..n-1]
+  where f x = x * 2 + 1
