@@ -39,3 +39,5 @@ halve x = (take n x, drop n x)
 safetail :: [a] -> [a]
 safetail [] = []
 safetail (_ :tail) = tail
+
+listComprehension = [x ^ 2 | x <- [1..10]]
